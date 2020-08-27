@@ -1,0 +1,33 @@
+// plugin/components/wx-swiper/wx-swiper.js
+Component({
+  /**
+   * 组件的属性列表
+   */
+  properties: {
+    images: {
+      type: Array,
+      value: []
+    }
+  },
+
+  /**
+   * 组件的初始数据
+   */
+  data: {
+
+  },
+
+  /**
+   * 组件的方法列表
+   */
+  methods: {
+    handlePreviewImage(e) {
+      const index = e.currentTarget.dataset.index;
+      const urls = this.data.images;
+      wx.previewImage({
+        current: urls[index],
+        urls: urls
+      });
+    }
+  }
+})

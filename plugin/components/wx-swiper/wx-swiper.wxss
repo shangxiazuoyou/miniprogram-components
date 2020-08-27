@@ -1,0 +1,8 @@
+/* plugin/components/wx-swiper/wx-swiper.wxss */
+.swiper {
+  height: 360rpx;
+}
+
+.swiper-image {
+  width: 100%;
+}
