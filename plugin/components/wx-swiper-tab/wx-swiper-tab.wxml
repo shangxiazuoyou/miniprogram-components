@@ -1,0 +1,19 @@
+<!--plugin/components/wx-swiper-tab/wx-swiper-tab.wxml-->
+<view class="swiper-tab">
+  <block wx:for="{{titles}}" wx:key="index">
+    <view class="swiper-tab-list {{currentTab==index ? 'on' : ''}}" data-current="{{index}}" bindtap="switchNav">{{item}}</view>
+  </block>
+</view>
+
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px"
+  bindchange="bindChange">
+  <swiper-item>
+    <view>流行</view>
+  </swiper-item>
+  <swiper-item>
+    <view>新款</view>
+  </swiper-item>
+  <swiper-item>
+    <view>精选</view>
+  </swiper-item>
+</swiper>

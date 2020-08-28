@@ -3,7 +3,8 @@
     "hello-component": "components/hello-component"
   },
   "pages": {
-    "hello-page": "pages/hello-page"
+    "wx-swiper": "components/wx-swiper/wx-swiper",
+    "wx-swiper-tab": "components/wx-swiper-tab/wx-swiper-tab"
   },
   "main": "index.js"
 }
